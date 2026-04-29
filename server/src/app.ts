@@ -6,7 +6,7 @@
  * over performance optimization.
  */
 
-import express from "express";
+import express, { Express } from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import swaggerUi from "swagger-ui-express";
@@ -25,7 +25,7 @@ import { requestLogger } from "./middleware/requestLogger";
 // This must be called before any other imports that use environment variables
 dotenv.config();
 
-const app = express();
+const app: Express = express();
 const PORT = process.env.PORT || 3001;
 
 /**

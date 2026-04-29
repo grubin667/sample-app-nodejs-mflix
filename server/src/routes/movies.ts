@@ -15,11 +15,11 @@
  * - findOneAndDelete() - Find and delete a movie in one operation
  */
 
-import express from "express";
+import express, { Router } from "express";
 import { asyncHandler } from "../utils/errorHandler";
 import * as movieController from "../controllers/movieController";
 
-const router = express.Router();
+const router: Router = express.Router();
 
 /**
  * @swagger
